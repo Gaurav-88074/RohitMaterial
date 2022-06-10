@@ -12,22 +12,26 @@ void displayArray(int* &array,int size){
     cout<<endl;
     
 }
+void bubbleSort(int* &array,int size){
+    for (int i = 0; i <size-1; i++){
+        cout<<endl;
+        cout<<"Iteration : "<<i+1<<endl;
+        for (int j = 0; j < size-i-1; j++){
+            cout<<"R"<<j+1<<": ";
+            if (array[j]>array[j+1]){
+                swap(array,j,j+1);
+            }
+            displayArray(array,size);
+        }
+        
+    }
+}
 int main(){
     int AR[10]={10,9,8,7,6};
     int * array = AR;
     int n=5;
 
-    for (int i = 0; i <n-1; i++){
-        cout<<endl;
-        cout<<"Iteration : "<<i+1<<endl;
-        for (int j = 0; j < n-i-1; j++){
-            cout<<"R"<<j+1<<": ";
-            if (AR[j]>AR[j+1]){
-                swap(array,j,j+1);
-            }
-            displayArray(array,n);
-        }
-        
-    }
+    bubbleSort(array,n);
+    
     return 0;
 }
