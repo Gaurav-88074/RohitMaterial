@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+   
+}
+html {
+  /* background-color: aqua; */
+  font-size: 62.5%;
+  box-sizing: border-box;
+  
+}
+body {
+    display: flex;
+    /* width: 40%; */
+    font-family: "Poppins", sans-serif;
+    padding: 2rem;
+    flex-direction: row;
+  /* white-space:break-spaces; */
+}
+
+
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.app{
+  width:100%;
+  display: flex;
+  flex-wrap:nowrap;
+}
+
+.welcome {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.portal {
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: #333;
+  border-style:dashed;
+  border-width: 0.1rem;
+  border-color: #f72585;
+  height: 90vh;
+  
+
+}
+
+.portal--common {
+  background-image: linear-gradient(to top left, #FF6F91, #FF9671);
+  
+}
+
+.portal--common:hover{
+  opacity: 1;
+}
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  width: 45.5%;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.4rem 1rem;
+    /* border:#fff; */
+    /* border-style: dashed; */
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+  margin-right: 3rem;
+ 
+}
+
+.form__input:focus {
+  opacity: 1;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.822);
+}
+
+.form__btn {
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0.6;
+}
+
+.form__btn:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.form__btn:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.admin{
+  border-style: dashed;
+  text-align: center;
+  margin-top:25%;
+  
+  border-radius: 1rem;
+}
+
+.admin:hover{
+  background-color: #ffffff59;
+}
+
+.operations{
+  border-style: dashed;
+  height: 30vh;
+}
+.Details h2{
+  padding-left: 0;
+}
+.Details{
+  margin: 2rem;
+  border-style: dashed;
+  align-items: center;
+  width: 90%;
+}
+
+.head{
+  align-items: center;
+  text-align: center;
+}
+
+.data{
+  border-style: dashed;
+  margin: 2rem;
+  font-family:'Times New Roman', Times, serif ;
+  font-size: 2rem;
+}
+
+.fields , values{
+  margin: 1rem;
+}
